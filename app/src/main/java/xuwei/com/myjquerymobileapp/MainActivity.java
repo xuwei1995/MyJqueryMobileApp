@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity
 {
     WebView mWebView;
-    EditText mEturl;
+   // EditText mEturl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity
 
     private void initView() {
         mWebView= (WebView) findViewById(R.id.webView);
-        mEturl = (EditText) findViewById(R.id.et_url);
+     //   mEturl = (EditText) findViewById(R.id.et_url);
     }
     public void goToWeb(View view){
-        String url=mEturl.getText().toString().trim();
+      //  String url=mEturl.getText().toString().trim();
         //从网络上加载
         //mWebView.loadUrl(url);
         //从本地加载，上线时用,加载速度更快

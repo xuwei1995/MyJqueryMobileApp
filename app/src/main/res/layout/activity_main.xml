@@ -6,18 +6,23 @@
     android:orientation="vertical"
 
     >
-    <EditText
+    <!--
+     <EditText
         android:id="@+id/et_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="http://192.168.33.26:8020/jQueryMobileDemo/JscommAndroid.html"/>
+    -->
+
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="goToWeb"
-        android:text="go"/>
+        android:text="打开webview" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +30,7 @@
         android:onClick="callJs"
         android:text="调用JS方法"/>
     <WebView
+        android:background="@color/colorAccent"
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
