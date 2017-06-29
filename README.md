@@ -249,5 +249,5 @@ file:///android_asset/jQueryMobileDemo/JscommAndroid.html
       ### 第三个html按钮就是在js中调用android代码做了一个简单的跳转 没什么可讲的了
       
       如果这个demo帮助到你了，请你给版主一个star谢谢，版主还是一个android菜鸟 希望和大家共同学习下面是我的QQ二维码 欢迎大家骚扰和我一起学习</br>
-      ![](https://github.com/xuwei1995/EventBusXTest/blob/master/app/src/main/java/xuwei/com/eventbusxtest/gif/erweimaqq.png?raw=true)
+      ![](https://github.com/xuwei1995/EventBusXTest/raw/master/app/src/main/java/xuwei/com/eventbusxtest/gif/erweimaqq.png?raw=true)
   
