@@ -234,15 +234,16 @@ file:///android_asset/jQueryMobileDemo/JscommAndroid.html
    请看  mWebView.loadUrl("javascript:"+method+"("+msg+")");
    method这里的值就是传过来的callback键对应的callBackMethod
    也就是再去调用js中的
-	  ```java	
+	  ```JavaScript	
 			function callBackMethod(msg) {
 				console.log("callBackMethod");
 				alert(JSON.stringify(msg))
 				//window.javaInterface.showMsg(JSON.stringify(msg));
 			}
 			  ```
-      我们看到的	alert(JSON.stringify(msg)) 就是那个弹窗咯
-      ###  第三个html按钮就是在js中调用android代码做了一个简单的跳转 没什么可讲的了
+      我们看到的alert(JSON.stringify(msg)) 就是那个弹窗咯
+      ###  第三个html按钮就是在js中调用android代码
+      做了一个简单的跳转 没什么可讲的了
       如果这个demo帮助到你了，请你给版主一个star谢谢，版主还是一个android菜鸟 希望和大家共同学习下面是我的QQ二维码 
       欢迎大家骚扰和我一起学习![](https://github.com/xuwei1995/MyJqueryMobileApp/blob/master/app/src/main/res/drawable/erweimaq.png?raw=true)
   
