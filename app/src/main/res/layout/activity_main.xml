@@ -24,12 +24,15 @@
         android:text="打开webview" />
 
     <Button
+        android:id="@+id/jsbtn"
+        android:enabled="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="callJs"
         android:text="调用JS方法"/>
     <WebView
+
         android:background="@color/colorAccent"
         android:id="@+id/webView"
         android:layout_width="match_parent"

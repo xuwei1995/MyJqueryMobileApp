@@ -9,6 +9,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,7 +19,8 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity
 {
     WebView mWebView;
-   // EditText mEturl;
+    Button jsbtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onPageFinished(WebView view, String url) {
                 Log.d("xx","页面加载完成");
+                jsbtn.setEnabled(true);
             }
             //页面启动时
             @Override
@@ -69,12 +72,9 @@ public class MainActivity extends AppCompatActivity
 
     private void initView() {
         mWebView= (WebView) findViewById(R.id.webView);
-     //   mEturl = (EditText) findViewById(R.id.et_url);
+        jsbtn = (Button) findViewById(R.id.jsbtn);
     }
     public void goToWeb(View view){
-      //  String url=mEturl.getText().toString().trim();
-        //从网络上加载
-        //mWebView.loadUrl(url);
         //从本地加载，上线时用,加载速度更快
         mWebView.loadUrl("file:///android_asset/jQueryMobileDemo/JscommAndroid.html");
 
