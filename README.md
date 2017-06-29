@@ -235,7 +235,10 @@ file:///android_asset/jQueryMobileDemo/JscommAndroid.html
    method这里的值就是传过来的callback键对应的callBackMethod
    也就是再去调用js中的
 	  ```JavaScript	
-			function callBackMethod(msg) {
+		/**
+			 * 显示信息
+			 * @param {Object} msg
+			 */	function callBackMethod(msg) {
 				console.log("callBackMethod");
 				alert(JSON.stringify(msg))
 				//window.javaInterface.showMsg(JSON.stringify(msg));
