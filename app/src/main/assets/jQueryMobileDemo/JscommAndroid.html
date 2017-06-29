@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			$(function() {
+			    $("#secondActivity").on("click",function(){
+
+                   console.log("secondActivity");
+                   window.javaInterface.toSecondActivity("secondActivity")
+                   //JS 调用toSecondActivity()方法
+			    });
+				$("#jscallandroid").on("click", function() {
+					console.log("jscallandroid");
+					window.javaInterface.showMsg("{'name':'xuwei','msg':'go to hell'}");
+				});
+				$("#jscallandroidCallBack").on("click", function() {
+					console.log("jscallandroidCallBack");
+					
+					window.javaInterface.getDetail("{'name':'xuwei','msg':'go to hell','callback':'callBackMethod'}");
+				});
+			});
+			/**
+			 * 显示信息
+			 * @param {Object} msg
+			 */
+			function showMsg(msg) {
+				console.log("showMsg");
+				window.javaInterface.showMsg(JSON.stringify(msg));
+			}
+			/**
+			 * 显示信息
+			 * @param {Object} msg
+			 */
+			function callBackMethod(msg) {
+				console.log("callBackMethod");
+				alert(JSON.stringify(msg))
+				//window.javaInterface.showMsg(JSON.stringify(msg));
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div>
+			<div data-role="header" data-position="fixed">
+				<h1>js与java互调我是webview</h1>
+			</div>
+			<div data-role="content">
+				<button class="btn" id="jscallandroid">JS调用安卓方法</button>
+				<button class="btn" id="jscallandroidCallBack">JS调用安卓方法(callback)</button>
+				<button class="btn" id="secondActivity">用JS调转到SecondActivity</button>
+				<button class="btn" id="2">待用功能</button>
+				<button class="btn" id="3">待用功能</button>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h1>我是底部</h1>
+			</div>
+		</div>
+	</body>
+
+</html>
