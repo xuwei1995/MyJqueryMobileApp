@@ -1,7 +1,7 @@
 # MyJqueryMobileApp
 jQuery.mobile.js 和android 交互
 ### 站在巨人的肩膀上，只为看的更远
-废物 不多说上图</br>![](https://github.com/xuwei1995/MyJqueryMobileApp/blob/master/app/src/main/res/drawable/jquery.gif?raw=true)
+废话不多说上图</br>![](https://github.com/xuwei1995/MyJqueryMobileApp/blob/master/app/src/main/res/drawable/jquery.gif?raw=true)
 </br>
 jQuery Mobile 是创建移动 web 应用程序的框架。</br>
 jQuery Mobile 适用于所有流行的智能手机和平板电脑。</br>
